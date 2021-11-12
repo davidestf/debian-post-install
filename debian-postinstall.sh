@@ -15,6 +15,7 @@ done
 # Add repositories
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl
+sudo apt install gnupg2
 
 echo "Adding repositoy"
 
@@ -67,7 +68,7 @@ mycli \
 peek \
 terminator \
 tilix \
-firefox \
+firefox-esr \
 thunderbird
 
 echo "Done"
