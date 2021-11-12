@@ -72,8 +72,8 @@ thunderbird
 echo "Done"
 echo "Installing developer tools..."
 
-sudo apt install openjdk-11-jdk openjdk-11-doc openjdk-11-source -y
-sudo apt install neovim -y
+#sudo apt install openjdk-11-jdk openjdk-11-doc openjdk-11-source -y
+#sudo apt install neovim -y
 sudo apt install sublime-text -y
 sudo apt install sublime-merge -y
 
@@ -81,13 +81,13 @@ sudo apt install sublime-merge -y
 
 echo "Installing snap packages..."
 
-sudo snap install zaproxy
-sudo snap install whatsdesk
-sudo snap install postman  
-sudo snap install --classic eclipse
-sudo snap install --classic code
-sudo snap install discord
-sudo snap install spotify
+#sudo snap install zaproxy
+#sudo snap install whatsdesk
+#sudo snap install postman  
+#sudo snap install --classic eclipse
+#sudo snap install --classic code
+#sudo snap install discord
+#sudo snap install spotify
 
 
 echo "Installing Desktop manager"
