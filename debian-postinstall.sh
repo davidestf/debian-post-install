@@ -54,6 +54,7 @@ ufw \
 python3-pip \
 zsh \
 filezilla \
+insomnia \
 thunderbird \
 remmina \
 arping \
@@ -65,8 +66,8 @@ rsync \
 mycli \
 peek \
 terminator \
-tilix
-firefox
+tilix \
+firefox \
 thunderbird
 
 echo "Done"
