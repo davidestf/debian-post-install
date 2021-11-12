@@ -41,35 +41,42 @@ sudo apt update
 # Standard packages
 
 echo "Installing standard packages..."
-
-sudo apt install \
-apt-transport-https \
-build-essential \
-ca-certificates \
-curl \
-dnsutils \
-arping \
-tcpdump \
-git \
-net-tools \
-nginx \
-ufw \
-python3-pip \
-zsh \
-filezilla \
-insomnia \
-thunderbird \
-remmina \
-arping \
-rsync \
-tcpdump \
-build-essential \
-mycli \
-peek \
-terminator \
-tilix \
-firefox-esr \
+while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
+   
+apt-transport-https 
+build-essential
+ca-certificates 
+curl 
+dnsutils 
+arping 
+tcpdump 
+git 
+net-tools 
+nginx 
+ufw 
+python3-pip 
+zsh 
+filezilla 
+insomnia 
+thunderbird 
+remmina 
+arping 
+rsync 
+tcpdump 
+build-essential 
+mycli 
+peek 
+terminator 
+tilix 
+firefox-esr 
 thunderbird
+perl
+zip unzip
+mutt
+  
+EOF
+)
+
 
 echo "Done"
 echo "Installing developer tools..."
