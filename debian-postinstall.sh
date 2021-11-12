@@ -6,7 +6,7 @@
 while true; do
     read -p "Do you want to install snap?" yn
     case $yn* in
-        [Yy]* ) sudo apt install snap -y && apt install snapd -y; break;;
+        [Yy]* ) sudo apt install snap -y && sudo apt install snapd -y; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -33,7 +33,7 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 echo "Updating system..."
 
 sudo apt update && sudo apt upgrade -y
-sudo apt autoremove -y
+
 
 # Standard packages
 
@@ -61,8 +61,7 @@ arping \
 rsync \
 tcpdump \
 build-essential \
-#vim-enhanced \
-rsync \
+vim-enhanced \
 mycli \
 peek \
 terminator \
@@ -90,6 +89,12 @@ sudo snap install --classic code
 sudo snap install discord
 sudo snap install spotify
 
+
+echo "Installing Desktop manager"
+sudo tasksel install desktop gnome-desktop
+sudo apt install task-xfce-desktop 
+sudo apt install budgie-desktop
+
 # Change default shell
 
 echo "Changing default shell to zsh..."
@@ -116,6 +121,7 @@ sudo apt install ./slack-desktop-*.deb
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb
 
+sudo apt autoremove -y
 echo "Installation succeeded!"
 
 #etc
