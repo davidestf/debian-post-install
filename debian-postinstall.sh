@@ -13,6 +13,8 @@ while true; do
 done
 
 # Add repositories
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl
 
 echo "Adding repositoy"
 
@@ -32,7 +34,7 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 
 echo "Updating system..."
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update
 
 
 # Standard packages
@@ -61,7 +63,6 @@ arping \
 rsync \
 tcpdump \
 build-essential \
-vim-enhanced \
 mycli \
 peek \
 terminator \
@@ -124,4 +125,4 @@ sudo dpkg -i minikube_latest_amd64.deb
 sudo apt autoremove -y
 echo "Installation succeeded!"
 
-#etc
+
