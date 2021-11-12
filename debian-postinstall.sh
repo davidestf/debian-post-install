@@ -1,17 +1,6 @@
 
 #!/bin/bash
 
-# Install required packages for complete installation
-
-while true; do
-    read -p "Do you want to install snap?" yn
-    case $yn* in
-        [Yy]* ) sudo apt install snap -y && sudo apt install snapd -y; break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-
 # Add repositories
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl
@@ -31,23 +20,17 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
-# Update system
 
 echo "Updating system..."
-
 sudo apt update
 
 
-# Standard packages
-
-echo "Installing standard packages..."
+echo "Installing packages"
 while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
    
 apt-transport-https 
 arping 
-arping 
 build-essential
-build-essential 
 ca-certificates 
 curl 
 dnsutils 
@@ -67,7 +50,6 @@ rsync
 sublime-merge
 sublime-text
 tcpdump 
-tcpdump 
 terminator 
 thunderbird
 thunderbird 
@@ -76,31 +58,12 @@ ufw
 wireshark
 zip unzip
 zsh 
-
   
 EOF
 )
 
 
 echo "Done"
-echo "Installing developer tools..."
-
-#sudo apt install openjdk-11-jdk openjdk-11-doc openjdk-11-source -y
-#sudo apt install neovim -y
-
-
-# Snap packages
-
-echo "Installing snap packages..."
-
-#sudo snap install zaproxy
-#sudo snap install whatsdesk
-#sudo snap install postman  
-#sudo snap install --classic eclipse
-#sudo snap install --classic code
-#sudo snap install discord
-#sudo snap install spotify
-
 
 echo "Installing Desktop manager"
 sudo tasksel install desktop gnome-desktop
@@ -121,6 +84,28 @@ sudo chsh -s $(which zsh)
 ln -sf ~/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/themes/spaceship.zsh-theme
 
 sudo source ~/.zshrc
+
+
+
+
+# Snap packages
+while true; do
+    read -p "Do you want to install snap?" yn
+    case $yn* in
+        [Yy]* ) sudo apt install snap -y && sudo apt install snapd -y; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+#sudo snap install zaproxy
+#sudo snap install whatsdesk
+#sudo snap install postman  
+#sudo snap install --classic eclipse
+#sudo snap install --classic code
+#sudo snap install discord
+#sudo snap install spotify
+
 
 
 echo "Installing *DEB package"
