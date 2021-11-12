@@ -44,35 +44,39 @@ echo "Installing standard packages..."
 while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
    
 apt-transport-https 
+arping 
+arping 
 build-essential
+build-essential 
 ca-certificates 
 curl 
 dnsutils 
-arping 
-tcpdump 
+filezilla 
+firefox-esr 
 git 
+insomnia 
+mutt
+mycli 
 net-tools 
 nginx 
-ufw 
-python3-pip 
-zsh 
-filezilla 
-insomnia 
-thunderbird 
-remmina 
-arping 
-rsync 
-tcpdump 
-build-essential 
-mycli 
 peek 
-terminator 
-tilix 
-firefox-esr 
-thunderbird
 perl
+python3-pip 
+remmina 
+rsync 
+sublime-merge
+sublime-text
+tcpdump 
+tcpdump 
+terminator 
+thunderbird
+thunderbird 
+tilix 
+ufw 
+wireshark
 zip unzip
-mutt
+zsh 
+
   
 EOF
 )
@@ -83,8 +87,7 @@ echo "Installing developer tools..."
 
 #sudo apt install openjdk-11-jdk openjdk-11-doc openjdk-11-source -y
 #sudo apt install neovim -y
-sudo apt install sublime-text -y
-sudo apt install sublime-merge -y
+
 
 # Snap packages
 
@@ -113,11 +116,11 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 perl -pi -e "s/robbyrussell/spaceship/g" ~/.zshrc
 
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 ln -sf ~/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/themes/spaceship.zsh-theme
 
-source ~/.zshrc
+sudo source ~/.zshrc
 
 
 echo "Installing *DEB package"
@@ -132,5 +135,6 @@ sudo dpkg -i minikube_latest_amd64.deb
 
 sudo apt autoremove -y
 echo "Installation succeeded!"
+
 
 
