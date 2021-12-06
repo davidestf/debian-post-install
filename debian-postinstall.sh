@@ -36,12 +36,14 @@ curl
 dnsutils 
 filezilla 
 firefox-esr 
+fluxbox
 git 
 insomnia 
 mutt
 mycli 
 net-tools 
 nginx 
+openbox
 peek 
 perl
 python3-pip 
@@ -52,7 +54,6 @@ sublime-text
 tcpdump 
 terminator 
 thunderbird
-thunderbird 
 tilix 
 ufw 
 wireshark
