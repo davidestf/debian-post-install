@@ -99,10 +99,11 @@ while true; do
     esac
 done
 
-#sudo snap install zaproxy
-#sudo snap install whatsdesk
-#sudo snap install postman  
-#sudo snap install --classic eclipse
+sudo snap install zaproxy
+sudo snap install whatsdesk
+sudo snap install shortwave
+sudo snap install postman  
+sudo snap install --classic eclipse
 #sudo snap install --classic code
 #sudo snap install discord
 #sudo snap install spotify
