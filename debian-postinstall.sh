@@ -116,6 +116,10 @@ echo "Installing *DEB package"
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.23.0-amd64.deb
 sudo apt install ./slack-desktop-*.deb
 
+#zoom
+curl -LO https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg -i zoom_amd64.deb
+
 #Minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb
