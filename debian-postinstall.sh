@@ -128,4 +128,7 @@ sudo apt autoremove -y
 echo "Installation succeeded!"
 
 
+#python package 
+sudo apt-get install libpq-dev python-dev
+sudo pip install pgcli 
 
