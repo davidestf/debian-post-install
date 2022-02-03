@@ -20,6 +20,12 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
+#virtualbox
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bullseye contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+
+
 
 echo "Updating system..."
 sudo apt update
@@ -56,6 +62,7 @@ terminator
 thunderbird
 tilix 
 ufw 
+virtualbox-6.1
 wireshark
 zip unzip
 zsh 
