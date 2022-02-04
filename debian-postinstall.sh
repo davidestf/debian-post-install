@@ -61,6 +61,7 @@ perl
 python3-pip 
 remmina 
 rsync 
+simplescreenrecorder 
 sublime-merge
 sublime-text
 tcpdump 
