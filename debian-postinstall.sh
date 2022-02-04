@@ -139,8 +139,7 @@ sudo dpkg -i zoom_amd64.deb
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb
 
-sudo apt autoremove -y
-echo "Installation succeeded!"
+
 
 
 #python package 
@@ -148,4 +147,7 @@ sudo apt-get install libpq-dev python-dev
 sudo pip install pgcli 
 
 #jekyll
-gem install jekyll bundler
+sudo gem install jekyll bundler
+
+sudo apt autoremove -y
+echo "Installation succeeded!"
