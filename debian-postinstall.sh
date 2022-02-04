@@ -61,6 +61,7 @@ perl
 python3-pip 
 remmina 
 rsync 
+ruby-full
 simplescreenrecorder 
 sublime-merge
 sublime-text
@@ -146,3 +147,5 @@ echo "Installation succeeded!"
 sudo apt-get install libpq-dev python-dev
 sudo pip install pgcli 
 
+#jekyll
+gem install jekyll bundler
