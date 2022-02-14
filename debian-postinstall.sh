@@ -72,6 +72,8 @@ tilix
 ufw 
 virtualbox-6.1
 wireshark
+wine32 
+wine64
 zip unzip
 zsh 
   
