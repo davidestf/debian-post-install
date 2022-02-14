@@ -3,6 +3,7 @@
 
 # Add repositories
 sudo apt update && sudo apt upgrade -y
+sudo dpkg --add-architecture i386
 sudo apt install curl
 sudo apt install gnupg2
 
@@ -145,7 +146,7 @@ sudo dpkg -i minikube_latest_amd64.deb
 
 
 #python package 
-sudo apt-get install libpq-dev python-dev
+sudo apt install libpq-dev python-dev
 sudo pip install pgcli 
 
 #jekyll
