@@ -50,6 +50,7 @@ firefox-esr
 flameshot
 fluxbox
 git 
+ghostscript
 insomnia 
 librewolf
 mutt
