@@ -144,14 +144,18 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest
 sudo dpkg -i minikube_latest_amd64.deb
 
 
-
-
 #python package 
 sudo apt install libpq-dev python-dev
 sudo pip install pgcli 
 
 #jekyll
 sudo gem install jekyll bundler
+
+
+#wine7
+#wget -O - https://dl.winehq.org/wine-builds/winehq.key | gpg --dearmor | sudo tee /etc/apt/winehq.gpg
+#sudo apt install --install-recommends winehq-stable
+
 
 sudo apt autoremove -y
 echo "Installation succeeded!"
