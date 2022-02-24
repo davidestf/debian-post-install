@@ -154,6 +154,7 @@ sudo gem install jekyll bundler
 
 #wine7
 #wget -O - https://dl.winehq.org/wine-builds/winehq.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/winehq.gpg
+#sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main'
 #sudo apt update
 #sudo apt install --install-recommends winehq-stable
 
