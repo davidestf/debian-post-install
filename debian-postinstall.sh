@@ -43,6 +43,7 @@ apt-transport-https
 arping 
 build-essential
 ca-certificates 
+chrome-gnome-shell
 curl 
 dnsutils 
 filezilla 
