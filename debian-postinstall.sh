@@ -60,10 +60,13 @@ nginx
 openbox
 peek 
 perl
+python3
+python3-distutils
 python3-pip 
 remmina 
 rsync 
 ruby-full
+s3fs
 simplescreenrecorder 
 sublime-merge
 sublime-text
