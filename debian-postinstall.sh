@@ -39,6 +39,7 @@ sudo apt update
 echo "Installing packages"
 while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
    
+apt-file   
 apt-transport-https 
 arping 
 build-essential
