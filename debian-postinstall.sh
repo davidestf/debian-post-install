@@ -163,5 +163,11 @@ sudo gem install jekyll bundler
 #sudo apt install --install-recommends winehq-stable
 
 
+#Remove GRUB theme
+sudo mv /etc/grub.d/05_debian_theme /etc/grub.d/05_debian_theme.save
+sudo update-initramfs -u
+sudo update-grub
+
+
 sudo apt autoremove -y
 echo "Installation succeeded!"
