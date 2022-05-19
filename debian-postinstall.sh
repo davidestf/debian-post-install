@@ -83,6 +83,7 @@ wine32
 wine64
 zip unzip
 zsh 
+xpad 
   
 EOF
 )
