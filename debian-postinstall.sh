@@ -55,6 +55,7 @@ git
 ghostscript
 insomnia 
 librewolf
+mtr
 mutt
 mycli 
 net-tools 
@@ -62,6 +63,7 @@ nginx
 openbox
 peek 
 perl
+postgresql-client
 python3
 python3-distutils
 python3-pip 
@@ -74,6 +76,7 @@ sublime-merge
 sublime-text
 tcpdump 
 terminator 
+traceroute
 thunderbird
 tilix 
 ufw 
