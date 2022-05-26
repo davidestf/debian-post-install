@@ -80,6 +80,7 @@ traceroute
 thunderbird
 tilix 
 ufw 
+vlc
 virtualbox-6.1
 wireshark
 wine32 
