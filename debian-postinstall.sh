@@ -55,6 +55,7 @@ git
 ghostscript
 insomnia 
 librewolf
+mariadb-client
 mtr
 mutt
 mycli 
