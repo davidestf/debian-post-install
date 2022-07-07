@@ -72,6 +72,7 @@ remmina
 rsync 
 ruby-full
 s3fs
+screen
 simplescreenrecorder 
 sublime-merge
 sublime-text
