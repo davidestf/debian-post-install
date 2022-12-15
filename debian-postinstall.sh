@@ -74,6 +74,7 @@ ruby-full
 s3fs
 screen
 simplescreenrecorder 
+smartmontools
 sublime-merge
 sublime-text
 tcpdump 
