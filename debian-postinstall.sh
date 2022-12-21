@@ -68,6 +68,7 @@ postgresql-client
 python3
 python3-distutils
 python3-pip 
+redis-tools
 remmina 
 rsync 
 ruby-full
