@@ -62,6 +62,7 @@ mycli
 net-tools 
 nginx 
 openbox
+openvpn
 peek 
 perl
 postgresql-client
