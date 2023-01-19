@@ -53,6 +53,7 @@ flameshot
 fluxbox
 git 
 ghostscript
+gnome-tweaks
 insomnia 
 librewolf
 mariadb-client
