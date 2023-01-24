@@ -153,7 +153,7 @@ sudo snap install --classic eclipse
 echo "Installing *DEB package"
 
 #slack
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.23.0-amd64.deb
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.29.149-amd64.deb
 sudo apt install ./slack-desktop-*.deb
 
 #zoom
