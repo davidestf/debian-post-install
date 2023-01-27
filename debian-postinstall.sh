@@ -55,6 +55,7 @@ git
 ghostscript
 gnome-tweaks
 insomnia 
+iotop
 librewolf
 mariadb-client
 mtr
@@ -77,6 +78,7 @@ ruby-full
 s3fs
 screen
 simplescreenrecorder 
+sysstat
 smartmontools
 sublime-merge
 sublime-text
