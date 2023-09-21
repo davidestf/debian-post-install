@@ -30,6 +30,12 @@ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bullseye contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 
+#ansible
+
+#terraform
+wget -O- https://apt.releases.hashicorp.com/gpg | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 
 echo "Updating system..."
@@ -39,6 +45,7 @@ sudo apt update
 echo "Installing packages"
 while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
    
+ansible
 apt-file   
 apt-transport-https 
 arping 
@@ -54,15 +61,19 @@ fluxbox
 git 
 ghostscript
 gnome-tweaks
+gnupg2
 insomnia 
 iotop
 librewolf
+lm-sensors
 mariadb-client
 mtr
 mutt
 mycli 
+ncat
 net-tools 
 nginx 
+nmap
 openbox
 openvpn
 peek 
@@ -83,13 +94,17 @@ smartmontools
 sublime-merge
 sublime-text
 tcpdump 
+telnet
 terminator 
+terraform
 traceroute
 thunderbird
 tilix 
 ufw 
 vlc
 virtualbox-6.1
+wget
+whois 
 wireshark
 wine32 
 wine64
