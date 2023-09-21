@@ -64,6 +64,7 @@ gnome-tweaks
 gnupg2
 insomnia 
 iotop
+iperf
 librewolf
 lm-sensors
 mariadb-client
