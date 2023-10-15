@@ -75,6 +75,7 @@ ncat
 net-tools 
 nginx 
 nmap
+ntp
 openbox
 openvpn
 peek 
