@@ -95,6 +95,7 @@ sysstat
 smartmontools
 sublime-merge
 sublime-text
+stress
 tcpdump 
 telnet
 terminator 
