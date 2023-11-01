@@ -72,6 +72,7 @@ mtr
 mutt
 mycli 
 ncat
+nfs-common
 net-tools 
 nginx 
 nmap
