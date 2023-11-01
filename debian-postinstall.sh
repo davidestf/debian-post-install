@@ -67,6 +67,7 @@ iotop
 iperf
 librewolf
 lm-sensors
+lshw
 mariadb-client
 mtr
 mutt
