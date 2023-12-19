@@ -62,6 +62,7 @@ git
 ghostscript
 gnome-tweaks
 gnupg2
+hdparm
 insomnia 
 iotop
 iperf
@@ -89,6 +90,7 @@ python3-pip
 redis-tools
 remmina 
 rsync 
+rsyslog
 ruby-full
 s3fs
 screen
