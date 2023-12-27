@@ -69,6 +69,7 @@ iperf
 librewolf
 lm-sensors
 lshw
+lsscsi
 mariadb-client
 mtr
 mutt
