@@ -56,6 +56,7 @@ curl
 dnsutils 
 filezilla 
 firefox-esr 
+fio
 flameshot
 fluxbox
 git 
