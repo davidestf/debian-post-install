@@ -106,6 +106,7 @@ tcpdump
 telnet
 terminator 
 terraform
+timeshift
 traceroute
 thunderbird
 tilix 
