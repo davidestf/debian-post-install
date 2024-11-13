@@ -60,13 +60,15 @@ fio
 flameshot
 fluxbox
 git 
-ghostscript
-gnome-tweaks
-gnupg2
+#ghostscript
+#gnome-tweaks
+#gnupg2
+hexchat
 hdparm
 insomnia 
 iotop
 iperf
+keepassxc
 librewolf
 lm-sensors
 lshw
@@ -112,12 +114,12 @@ thunderbird
 tilix 
 ufw 
 vlc
-virtualbox-6.1
+#virtualbox-6.1
 wget
 whois 
 wireshark
-wine32 
-wine64
+#wine32 
+#wine64
 zip unzip
 zsh 
 xpad 
@@ -129,12 +131,21 @@ EOF
 echo "Done"
 
 echo "Installing Desktop manager"
-sudo tasksel install desktop gnome-desktop
-sudo apt install task-xfce-desktop 
-sudo apt install budgie-desktop
+#sudo tasksel install desktop gnome-desktop
+#sudo apt install task-xfce-desktop 
+#sudo apt install budgie-desktop
+
+# Clone and setup i3 configuration
+echo "Setting up i3 configuration..."
+cd $HOME
+git clone https://github.com/davidestf/i3-config.git
+cd i3-config
+chmod +x setup-i3-install.sh
+./setup-i3-install.sh
+
+
 
 # Change default shell
-
 echo "Changing default shell to zsh..."
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh && \
 git clone https://github.com/denysdovhan/spaceship-prompt.git ~/.oh-my-zsh/themes/spaceship-prompt
@@ -166,11 +177,11 @@ while true; do
     esac
 done
 
-sudo snap install zaproxy
+#sudo snap install zaproxy
 sudo snap install whatsdesk
 sudo snap install shortwave
-sudo snap install postman  
-sudo snap install --classic eclipse
+#sudo snap install postman  
+#sudo snap install --classic eclipse
 #sudo snap install --classic code
 #sudo snap install discord
 #sudo snap install spotify
@@ -206,6 +217,9 @@ sudo gem install jekyll bundler
 #sudo apt update
 #sudo apt install --install-recommends winehq-stable
 
+# Install Joplin
+echo "Installing Joplin..."
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
 #Remove GRUB theme
 sudo mv /etc/grub.d/05_debian_theme /etc/grub.d/05_debian_theme.save
