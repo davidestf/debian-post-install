@@ -74,6 +74,7 @@ iotop
 iperf
 keepassxc
 librewolf
+linux-cpupower
 lm-sensors
 lshw
 lsscsi
