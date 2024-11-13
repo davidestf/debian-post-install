@@ -112,6 +112,7 @@ timeshift
 traceroute
 thunderbird
 tilix 
+tmux
 ufw 
 vlc
 #virtualbox-6.1
