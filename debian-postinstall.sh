@@ -158,6 +158,9 @@ sudo chsh -s $(which zsh)
 
 ln -sf ~/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/themes/spaceship.zsh-theme
 
+#add autosuggestions plugin
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+
 sudo source ~/.zshrc
 
 echo "Installing Packer"
