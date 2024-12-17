@@ -64,6 +64,7 @@ firefox-esr
 fio
 #flameshot
 #fluxbox
+fonts-powerline
 git 
 #ghostscript
 gnome-tweaks
