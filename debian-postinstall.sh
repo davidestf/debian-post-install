@@ -68,6 +68,7 @@ fonts-powerline
 git 
 #ghostscript
 gnome-tweaks
+golang
 gsmartcontrol
 hexchat
 hdparm
