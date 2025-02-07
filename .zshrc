@@ -8,7 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="agnoster"
+#ZSH_THEME="spaceship"
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 
@@ -161,10 +162,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias battery='echo "Battery Status: $(cat /sys/class/power_supply/BAT0/status)" &    & echo "Battery Level: $(cat /sys/class/power_supply/BAT0/capacity)%" && acpi -b'
+
+
+
+
+
 
 
 echo 'export PATH=$PATH:$HOME/bin' >> ~/.zshrc
 echo "export EDITOR='subl -w'" >> ~/.zshrc
 export PATH=$PATH:$HOME/bin
 export EDITOR='subl -w'
+export PATH=$PATH:$HOME/go/bin
 
