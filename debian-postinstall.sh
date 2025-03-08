@@ -214,9 +214,8 @@ curl -LO https://zoom.us/client/latest/zoom_amd64.deb
 sudo dpkg -i zoom_amd64.deb
 
 #Minikube
-#curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
-#sudo dpkg -i minikube_latest_amd64.deb
-
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
 #python package 
 sudo apt install libpq-dev python-dev
