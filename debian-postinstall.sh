@@ -50,29 +50,29 @@ while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
 
 ansible
 apt-file
-apt-transport-https 
-arping 
+apt-transport-https
+arping
 build-essential
-ca-certificates 
+ca-certificates
 chrome-gnome-shell
 chromium
 codium
-curl 
-dnsutils 
-filezilla 
-firefox-esr 
+curl
+dnsutils
+filezilla
+firefox-esr
 fio
 #flameshot
 #fluxbox
 fonts-powerline
-git 
+git
 #ghostscript
 gnome-tweaks
 golang
 gsmartcontrol
 hexchat
 hdparm
-insomnia 
+insomnia
 iotop
 iperf
 keepassxc
@@ -85,12 +85,12 @@ lsscsi
 mariadb-client
 mtr
 #mutt
-mycli 
+mycli
 ncat
 nfs-common
-net-tools 
+net-tools
 network-manager-openvpn-gnome
-#nginx 
+#nginx
 nmap
 ntp
 nvme-cli
@@ -98,49 +98,49 @@ obs-studio
 #openbox
 #openvpn
 packer
-peek 
+peek
 perl
 postgresql-client
 python3
 python3-distutils
-python3-pip 
+python3-pip
 redis-tools
-remmina 
-rsync 
+remmina
+rsync
 rsyslog
 #ruby-full
 s3fs
 screen
-simplescreenrecorder 
+simplescreenrecorder
 sysstat
 smartmontools
 #sublime-merge
 #sublime-text
 stress
-tcpdump 
+tcpdump
 telnet
-terminator 
+terminator
 terraform
 timeshift
 tldr
 traceroute
 thunderbird
-tilix 
+tilix
 tmux
-ufw 
+ufw
 vault
 vim-gtk3
 vlc
 #virtualbox-6.1
 wget
-whois 
+whois
 #wireshark
-#wine32 
+#wine32
 #wine64
 zip unzip
-zsh 
-xpad 
-  
+zsh
+xpad
+
 EOF
 )
 
@@ -149,7 +149,7 @@ echo "Done"
 
 echo "Installing Desktop manager"
 sudo tasksel install desktop gnome-desktop
-sudo apt install task-xfce-desktop 
+sudo apt install task-xfce-desktop
 #sudo apt install budgie-desktop
 
 # Clone and setup i3 configuration
@@ -195,7 +195,7 @@ done
 #sudo snap install zaproxy
 sudo snap install whatsdesk
 sudo snap install shortwave
-#sudo snap install postman  
+#sudo snap install postman
 #sudo snap install --classic eclipse
 #sudo snap install --classic code
 #sudo snap install discord
@@ -221,9 +221,9 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/Kubectl
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
-#python package 
+#python package
 sudo apt install libpq-dev python-dev
-sudo pip install pgcli 
+sudo pip install pgcli
 
 #jekyll
 #sudo gem install jekyll bundler
